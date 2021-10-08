@@ -1,0 +1,490 @@
+object frmItem: TfrmItem
+  Left = 288
+  Top = 205
+  BorderStyle = bsSingle
+  Caption = 'Edit item'
+  ClientHeight = 356
+  ClientWidth = 519
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  Icon.Data = {
+    000001000200101010000000000028010000260000002020100000000000E802
+    00004E0100002800000010000000200000000100040000000000C00000000000
+    0000000000001000000000000000000000000000800000800000008080008000
+    00008000800080800000C0C0C000808080000000FF0000FF000000FFFF00FF00
+    0000FF00FF00FFFF0000FFFFFF00000000000000000000000000008888000000
+    0000088888800888888888888888888888888888778888888888888877880000
+    0000080000880000000000EEEE00000000000EEEEEE00E0E0E0E0EEE00E00EEE
+    EEEEEEEE00E0000000000EEEEEE00000000000EEEE0000000000000000000000
+    0000000000000000000000000000FFFFFFFFFFC3FFFFFF81FFFF8000FFFF0000
+    FFFF0000FFFFFF80FFFFFF81FFFF8000FFFF0000FFFF0000FFFF0000FFFFFF81
+    FFFFFFC3FFFFFFFFFFFFFFFFFFFF280000002000000040000000010004000000
+    0000800200000000000000000000000000000000000000000000000080000080
+    000000808000800000008000800080800000C0C0C000808080000000FF0000FF
+    000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000888880000000000000000000000000
+    8888888880000000000000000000000888888888880000008000008880800088
+    8888888888800008888888888888808888888888888000888888888888888888
+    8888888888880888888888888888888888888880008888888888888888888888
+    8888888000880888888888888888888888888880008800888888888888888888
+    8888888888880000000000000000008888888888888000000000000000000088
+    88000008888000000000000000000008007E7E70080000000000000000000000
+    E7E7E7E7E0800000000000000000008E7E7E7E7E7E800000EF0007EFE00F0007
+    E7E7E7F777080000000000000000007E7E7E7E00077000E7E7E7E7E7E7E7E7E7
+    E7E7E00000E00E7E7E7E7E7E7E7E7E7E7E7E7000007007F7F7F7F7F7F7F7F7F7
+    E7E7E07770E00000000000000000007E7E7E7E000E7800000000000000000007
+    E7E7E7E7E7080000000000000000008F7E7E7E7E7E8000000000000000000000
+    FFE7E7E7E0000000000000000000000080FF7F70800000000000000000000000
+    0080008000000000000000000000000000000000000000000000000000000000
+    00000000000000000000000000000000000000000000FFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFC1FFFFFF007FFFFE003F7C5C001E0004001C00000008000001C0000
+    001C8000001CC0000000FFFFC001FFFFC001FFFFE003FFFFE001F384C001E000
+    4000C000000080000038000000380000000080000000FFFFC000FFFFC001FFFF
+    E003FFFFF007FFFFFC1FFFFFFFFFFFFFFFFFFFFFFFFF}
+  KeyPreview = True
+  OldCreateOrder = True
+  OnActivate = FormActivate
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyPress = FormKeyPress
+  PixelsPerInch = 96
+  TextHeight = 13
+  object outlblCategory: TLabel
+    Left = 8
+    Top = 16
+    Width = 45
+    Height = 13
+    Caption = 'Category:'
+  end
+  object outlblUserName: TLabel
+    Left = 8
+    Top = 92
+    Width = 54
+    Height = 13
+    Caption = 'User name:'
+  end
+  object outlblSystem: TLabel
+    Left = 8
+    Top = 64
+    Width = 37
+    Height = 13
+    Caption = 'System:'
+  end
+  object outlblPassword: TLabel
+    Left = 8
+    Top = 120
+    Width = 49
+    Height = 13
+    Caption = 'Password:'
+  end
+  object outlblStartDate: TLabel
+    Left = 8
+    Top = 200
+    Width = 49
+    Height = 13
+    Caption = 'Start date:'
+  end
+  object outlblComments: TLabel
+    Left = 8
+    Top = 148
+    Width = 79
+    Height = 13
+    Caption = 'URL/Comments:'
+  end
+  object lblRetype: TLabel
+    Left = 280
+    Top = 120
+    Width = 37
+    Height = 13
+    Alignment = taRightJustify
+    Caption = 'Retype:'
+  end
+  object outlblMoreInfo: TLabel
+    Left = 8
+    Top = 228
+    Width = 47
+    Height = 13
+    Caption = 'More info:'
+  end
+  object outlblExpires: TLabel
+    Left = 280
+    Top = 200
+    Width = 37
+    Height = 13
+    Alignment = taRightJustify
+    Caption = 'Expires:'
+  end
+  object btnGenPassword: TSpeedButton
+    Left = 220
+    Top = 116
+    Width = 23
+    Height = 22
+    Hint = 'Generate a random password'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000C40E0000C40E00001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00777777777778
+      887777777777770000877878787870EEEE08700000000EEEEEE00E0E0E0E0EEE
+      00E00EEEEEEEEEEE00E0000000000EEEEEE07777777770EEEE07777777777700
+      0077777777777777777787778877788777877070770707707077770777707777
+      0777000000000000000777077770777707777787777877778777}
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = btnGenPasswordClick
+  end
+  object btnPickDate2: TSpeedButton
+    Left = 432
+    Top = 196
+    Width = 23
+    Height = 22
+    Hint = 'Select a date'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000C40E0000C40E00001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00770000000000
+      0077788888888888807778EEEEEEEEEE807778E80E80E80E807778EEEEEEEEEE
+      807778E80E80E80E807778EEEEEEEEEE807778EEEEE99EEE807778EEEEE99EEE
+      807778EEEEE99EEE807778EEEEE99EEE807778EEE9999EEE807778EEEE999EEE
+      807778EEEEE99EEE807778EEEEEEEEEE80777888888888888777}
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = btnPickDate2Click
+  end
+  object btnPickDate: TSpeedButton
+    Left = 220
+    Top = 196
+    Width = 23
+    Height = 22
+    Hint = 'Select a date'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000C40E0000C40E00001000000000000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00770000000000
+      0077788888888888807778EEEEEEEEEE807778E80E80E80E807778EEEEEEEEEE
+      807778E80E80E80E807778EEEEEEEEEE807778EEEEE99EEE807778EEEEE99EEE
+      807778EEEEE99EEE807778EEEEE99EEE807778EEE9999EEE807778EEEE999EEE
+      807778EEEEE99EEE807778EEEEEEEEEE80777888888888888777}
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = btnPickDateClick
+  end
+  object Image1: TImage
+    Left = 480
+    Top = 264
+    Width = 32
+    Height = 32
+    AutoSize = True
+    Picture.Data = {
+      055449636F6E0000010002001010100000000000280100002600000020201000
+      00000000E80200004E0100002800000010000000200000000100040000000000
+      C000000000000000000000001000000000000000000000000000800000800000
+      00808000800000008000800080800000C0C0C000808080000000FF0000FF0000
+      00FFFF00FF000000FF00FF00FFFF0000FFFFFF00000000000000000000000000
+      0088880000000000088888800888888888888888888888888888778888888888
+      8888778800000000080000880000000000EEEE00000000000EEEEEE00E0E0E0E
+      0EEE00E00EEEEEEEEEEE00E0000000000EEEEEE00000000000EEEE0000000000
+      0000000000000000000000000000000000000000FFFFFFFFFFC3FFFFFF81FFFF
+      8000FFFF0000FFFF0000FFFFFF80FFFFFF81FFFF8000FFFF0000FFFF0000FFFF
+      0000FFFFFF81FFFFFFC3FFFFFFFFFFFFFFFFFFFF280000002000000040000000
+      0100040000000000800200000000000000000000000000000000000000000000
+      000080000080000000808000800000008000800080800000C0C0C00080808000
+      0000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF0000000000
+      0000000000000000000000000000000000000000000000000000000000000000
+      0000000000000000000000000000000000000000000000888880000000000000
+      0000000000008888888880000000000000000000000888888888880000008000
+      0088808000888888888888800008888888888888808888888888888000888888
+      8888888888888888888888880888888888888888888888888880008888888888
+      8888888888888888888000880888888888888888888888888880008800888888
+      8888888888888888888888880000000000000000008888888888888000000000
+      00000000008888000008888000000000000000000008007E7E70080000000000
+      000000000000E7E7E7E7E0800000000000000000008E7E7E7E7E7E800000EF00
+      07EFE00F0007E7E7E7F777080000000000000000007E7E7E7E00077000E7E7E7
+      E7E7E7E7E7E7E7E7E00000E00E7E7E7E7E7E7E7E7E7E7E7E7000007007F7F7F7
+      F7F7F7F7F7F7E7E7E07770E00000000000000000007E7E7E7E000E7800000000
+      000000000007E7E7E7E7E7080000000000000000008F7E7E7E7E7E8000000000
+      000000000000FFE7E7E7E0000000000000000000000080FF7F70800000000000
+      0000000000000080008000000000000000000000000000000000000000000000
+      00000000000000000000000000000000000000000000000000000000FFFFFFFF
+      FFFFFFFFFFFFFFFFFFFFFC1FFFFFF007FFFFE003F7C5C001E0004001C0000000
+      8000001C0000001C8000001CC0000000FFFFC001FFFFC001FFFFE003FFFFE001
+      F384C001E0004000C000000080000038000000380000000080000000FFFFC000
+      FFFFC001FFFFE003FFFFF007FFFFFC1FFFFFFFFFFFFFFFFFFFFFFFFF}
+  end
+  object lblHintCategory: TLabel
+    Left = 108
+    Top = 36
+    Width = 219
+    Height = 13
+    Caption = 'Select an existing category or enter a new one'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object lblHintMoreInfo: TLabel
+    Left = 108
+    Top = 300
+    Width = 321
+    Height = 13
+    Caption = 
+      'Precede hyperlinks with prefixes like http://, ftp://, telnet://' +
+      ' or file://'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clMaroon
+    Font.Height = -11
+    Font.Name = 'MS Sans Serif'
+    Font.Style = []
+    ParentFont = False
+  end
+  object outlblCustom: TLabel
+    Left = 8
+    Top = 172
+    Width = 38
+    Height = 13
+    Caption = 'Custom:'
+  end
+  object btnCharMap: TSpeedButton
+    Left = 490
+    Top = 144
+    Width = 23
+    Height = 22
+    Hint = 'Character map'
+    Glyph.Data = {
+      F6000000424DF600000000000000760000002800000010000000100000000100
+      04000000000080000000C40E0000C40E00001000000000000000000000000000
+      8000008000000080800080000000800080008080000080808000C0C0C0000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00DDDDDDDDDDDD
+      DDDDDDDDDDDDDDDDDDDDDDDDDDDDD0000DDDDDDDDDDD07DD00DDDDDDDDDDDD00
+      07DDDDD000DD7000DDDDDD00D00D00DD70DDDDDD007DD0000DDDDDD000DDDDDD
+      DDDDDD00DD0DDDD0DDDDDD0DD00DDD0D0DDDDD0000DDDDDDDDDDDDD00DDDDDDD
+      DDDDDD00D00DDDDDDDDDDDD000DDDDDDDDDDDDDDDDDDDDDDDDDD}
+    ParentShowHint = False
+    ShowHint = True
+    OnClick = btnCharMapClick
+  end
+  object lblSuperPaste: TLabel
+    Left = 8
+    Top = 332
+    Width = 58
+    Height = 13
+    Caption = 'SuperPaste:'
+  end
+  object fldUserName: TEdit
+    Left = 108
+    Top = 88
+    Width = 321
+    Height = 21
+    TabOrder = 2
+    Text = 'fldUserName'
+    OnEnter = CtlNonPswEnter
+  end
+  object fldSystem: TEdit
+    Left = 108
+    Top = 60
+    Width = 321
+    Height = 21
+    TabOrder = 1
+    Text = 'fldSystem'
+    OnEnter = CtlNonPswEnter
+  end
+  object fldPassword: TEdit
+    Left = 108
+    Top = 116
+    Width = 109
+    Height = 21
+    MaxLength = 99
+    TabOrder = 3
+    Text = 'fldPassword'
+    OnEnter = fldPasswordEnter
+  end
+  object fldRetype: TEdit
+    Left = 320
+    Top = 116
+    Width = 109
+    Height = 21
+    MaxLength = 99
+    TabOrder = 4
+    Text = 'fldRetype'
+    OnEnter = fldRetypeEnter
+  end
+  object fldComments: TEdit
+    Left = 108
+    Top = 144
+    Width = 321
+    Height = 21
+    TabOrder = 5
+    Text = 'fldComments'
+    OnEnter = CtlNonPswEnter
+  end
+  object fldStartDate: TEdit
+    Left = 108
+    Top = 196
+    Width = 109
+    Height = 21
+    TabOrder = 7
+    Text = 'fldStartDate'
+    OnEnter = CtlNonPswEnter
+  end
+  object fldExpires: TEdit
+    Left = 320
+    Top = 196
+    Width = 109
+    Height = 21
+    TabOrder = 8
+    Text = 'fldExpires'
+    OnEnter = CtlNonPswEnter
+  end
+  object cmbCategory: TComboBox
+    Left = 108
+    Top = 12
+    Width = 321
+    Height = 21
+    ItemHeight = 13
+    TabOrder = 0
+    Text = 'cmbCategory'
+    OnEnter = CtlNonPswEnter
+  end
+  object fldInfo: TMemo
+    Left = 108
+    Top = 224
+    Width = 321
+    Height = 73
+    Lines.Strings = (
+      'fldInfo')
+    ScrollBars = ssBoth
+    TabOrder = 9
+    OnEnter = CtlNonPswEnter
+  end
+  object fldCustom: TEdit
+    Left = 108
+    Top = 168
+    Width = 321
+    Height = 21
+    TabOrder = 6
+    Text = 'fldCustom'
+    OnEnter = CtlNonPswEnter
+  end
+  object btnOk: TButton
+    Left = 440
+    Top = 12
+    Width = 73
+    Height = 25
+    Caption = '&Accept'
+    Default = True
+    TabOrder = 13
+    OnClick = btnOkClick
+    OnEnter = CtlNonPswEnter
+  end
+  object btnCancel: TButton
+    Left = 440
+    Top = 40
+    Width = 73
+    Height = 25
+    Caption = '&Cancel'
+    TabOrder = 14
+    OnClick = btnCancelClick
+    OnEnter = CtlNonPswEnter
+  end
+  object chkPswVisible: TCheckBox
+    Left = 432
+    Top = 120
+    Width = 81
+    Height = 17
+    Caption = '&Visible'
+    TabOrder = 16
+    OnClick = chkPswVisibleClick
+  end
+  object btnHelp: TButton
+    Left = 440
+    Top = 72
+    Width = 73
+    Height = 25
+    Caption = '&Help'
+    TabOrder = 15
+    OnClick = btnHelpClick
+  end
+  object fldSuperPaste: TEdit
+    Left = 108
+    Top = 328
+    Width = 301
+    Height = 21
+    TabOrder = 10
+    Text = 'fldSuperPaste'
+  end
+  object btnSuperPaste: TButton
+    Left = 412
+    Top = 328
+    Width = 21
+    Height = 21
+    Caption = '...'
+    PopupMenu = popupSuperPaste
+    TabOrder = 11
+    OnClick = btnSuperPasteClick
+  end
+  object btnSPasteDefault: TButton
+    Left = 436
+    Top = 328
+    Width = 77
+    Height = 21
+    Caption = '&Default'
+    TabOrder = 12
+    OnClick = btnSPasteDefaultClick
+  end
+  object popupSuperPaste: TPopupMenu
+    Left = 444
+    Top = 272
+    object outpopoptUser: TMenuItem
+      Caption = 'User'
+      Hint = '$USER'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptPassword: TMenuItem
+      Caption = 'Password'
+      Hint = '$PASS'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptCategory: TMenuItem
+      Caption = 'Category'
+      Hint = '$CATEGORY'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptSystem: TMenuItem
+      Caption = 'System'
+      Hint = '$SYSTEM'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptComments: TMenuItem
+      Caption = 'Comments'
+      Hint = '$COMMENTS'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptCustom: TMenuItem
+      Caption = 'Custom'
+      Hint = '$CUSTOM'
+      OnClick = popoptSuperPasteClick
+    end
+    object N1: TMenuItem
+      Caption = '-'
+    end
+    object outpopoptKeyTab: TMenuItem
+      Caption = '<Tab>'
+      Hint = '{tab}'
+      OnClick = popoptSuperPasteClick
+    end
+    object outpopoptKeyEnter: TMenuItem
+      Caption = '<Enter>'
+      Hint = '{enter}'
+      OnClick = popoptSuperPasteClick
+    end
+  end
+end

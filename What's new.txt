@@ -1,0 +1,188 @@
+PINs, Secure Passwords Manager
+http://www.mirekw.com/
+
+What's new
+==========
+
+4.60.0.91 Beta, 27 Apr 2004
+- New security option "Super paste enabled when database is locked"
+- New pasting option - paste clipboard contents. Useful especially 
+  for pasting text to Java applications that do not support clipboard handling.
+- Option "Change file password (F4)" moved to more logical "Files" menu.
+- New option "Lock the database now (F9)".
+- Source code moved to Delphi 7.
+- Due to moving to a new version of the compiler some components have been changed.
+
+
+4.50.0.86, 19 Mar 2003
+- Release version.
+- Setup is available now in English, German, French, Polish, Russian and Spanish.
+
+
+4.50.0.85 Beta RC1, 11 Mar 2003
+- The program tells clipboard extenders to ignore passwords being
+  copied to the clipboard (it works with ClipMate and Yankee Clipper,
+  possibly with other extenders too.)
+- The password input dialog allows minimizing the application when the
+  database has been locked.
+- New Info box popup menu offering two options: Copy selection to the
+  clipboard and Toggle activity of embedded hyperlinks.
+- The comma (,) is accepted as a valid URL character.
+- Passwords generator - repaired crash on empty set of user characters.
+- Corrected problem with SuperPasting passwords containing '{' characters.
+- Corrected problem with items having an empty category.
+- The program is available now in 25 language versions.
+
+
+4.50.0.82 Beta, 09 Sep 2002
+- Possibility to paste user name and/or password into external
+  applications using system-wide hotkeys
+  (defaults: Ctrl+F11, and Ctrl+F12, inactive.)
+- "SuperPaste" option allowing pasting into external applications
+  user-defined set of data, together with keys like <Tab> and <Enter>.
+  Default system-wide hotkey: Ctrl+Y, active.
+- Expired passwords verification and handling.
+- Export to text file - command configuration moved from general
+  settings to a dialog opened every time an export is being performed.
+- Export to text file - possibility to specify which categories should be
+  exported.
+- Export to text file - possibility to export quoted texts.
+- Import from text file - properly imports quoted texts.
+- A new configuration option - expand all categories after opening a data
+  file.
+- Repaired saving of settings to an .ini file.
+- Repaired problem with redundant error messages in SuperPaste option.
+- System-wide hotkeys editor.
+
+
+v.4.20.0.76, 29 Jun 2002
+- Release version.
+- Possibility to run from a write-protected floppy or a CD-ROM.
+- Multilingual setup.
+
+
+v.4.20.0.75 Beta RC1, 24 Jun 2002
+- Exporting data to a text file requires entering a master password.
+- Repaired data sorting.
+- Possibility of reordering columns by dragging their headers to new
+  positions.
+- A new security option: lock database after defined time of inactivity.
+- A new configuration option - auto-expand focused categories.
+- Fixed problem with recursive locking of the database.
+- Repaired problem with importing the "More info" field.
+
+
+v.4.10.0.70 Beta, 18 Jun 2002
+- Full program documentation (Help).
+- "Guidelines for the creation of cryptographically strong passwords",
+  by Steven Michael.
+- Possibility to define user names for all columns (except for the
+  category).
+- User names for columns can be switch off without erasing them.
+- Accept files dropped on the program window.
+- Possibility to define the action performed after double-clicking
+  an item: edit, copy password, copy user name or launch a URL.
+- Passwords generator - a list of predefined popular templates.
+- Passwords generator - when generating a number of passwords of the
+  specified length, a new template is generated for every password.
+- Possibility of predefining user password templates in Passwords.tpl file.
+- An option for automatic checking if a new version of the program is
+  available.
+- "Stay on top" option, available in menu "View" (shortcut <Ctrl+F5>).
+- Configurable count of Most Recently Used database files.
+- Repaired bug causing dialog windows not to restore their positions on
+  the screen.
+
+
+v.4.00.0.62, 07 Mar 2002
+- Release version.
+
+
+v.4.00.0.61 Beta 3, 03 Mar 2002
+- New option - auto saving on exit.
+- Improved detection of minimizing/restoring the application.
+- Fixed saving/restoring of dates columns width.
+- Found records are always put into the visible area of the grid.
+- Extracted last(?) missing international messages.
+- Fixed international tooltips for file selection buttons.
+- Localized message boxes.
+- Fixed other minor localization issues.
+- New language versions: Slovenian and Macedonian.
+
+
+v.4.00.0.56 Beta 2, 17 Feb 2002
+- Possibility to configure the visibility of particular columns.
+- Windows XP Themes Manager compatibility.
+- Configurable sounds.
+- Items editor - calendar gadget is properly initialized with date.
+- Possibility to reenter invalid password up to 3 times.
+- Copy user name/password to Clipboard available in the right-click menu.
+- "Exit" button on the main toolbar
+- Removed dates panel introduced in Beta 1.
+- Repaired sorting on dates columns.
+
+
+v.4.00.0.53 Beta 1, 25 Jan 2002
+- PINs is now OSI Certified Open Source Software.
+- A new module for safe files and folders wiping. Support for Gutmann,
+  DoD and custom wiping methods.
+- A new column with custom user-defined data.
+- A new security setting: Empty the clipboard on exit.
+- A new security setting: Empty the clipboard on minimize.
+- A new setting: Copy password to clipboard on URL launching.
+- A new security setting: Create an additional archival copy of saved
+  data files in a specified location.
+- A new security setting: Lock the database on minimize.
+- Password generator - possibility to use user-defined symbols.
+- Password generator - possibility to generate any number of passwords
+  at once.
+- An option for clearing the clipboard (keyboard shortcut <Ctrl-Q>).
+- Much improved loading time. Large data files load even 8 times faster.
+- All program settings can be saved to and restored from an INI file.
+- Configurable fonts, styles, and colors.
+- A character map tool allowing entering characters not available on
+  the keyboard.
+- <Esc> key allows to close all dialog windows.
+- Scroll tracking.
+- Dialog windows restore their locations and sizes from previous sessions.
+- When exporting data to text file, multiline descriptions are output in
+  one line.
+- <Tab> can be used as fields' separator in text files.
+- Both date fields moved to the dates panel.
+- Default open/save folder is the PINs installation folder.
+- View menu - a new option for showing/hiding the dates panel.
+- Removed bug causing wrong import of text files containing empty fields.
+- Minor changes and improvements.
+
+
+v.3.00.0.33-35, 22 Dec-12 Jan 2002
+- New translations: Czech, Dutch, French, Italian, Norwegian
+  and Brazilian Portuguese.
+
+
+v.3.00.0.32, 16 Dec 2001
+- URLs launching directly from the memo box.
+- Option for hiding passwords in the editing dialog.
+- Minimizing to system tray.
+- Possibility to create multilingual versions.
+- English, German, Polish, Russian, Spanish and Swedish language
+  versions.
+- New function "Copy user name to clipboard" (<Ctrl+U>).
+- New hyperlinks types: file, telnet, news, gopher, weis, ftps.
+- Resizable memo box.
+- Improved logic of opening, appending and importing.
+- Swapped the order of the "User" and "System" fields.
+- Improved detection of URLs.
+- URL found in the "URL/Comment" field is the default one for
+  launching with the <Ctrl+H> command.
+
+
+v.2.50.0.19, 10 Oct 2001
+- Embedded hyperlinks launching.
+- Unlimited size of additional description.
+- Remapped duplicated hot keys.
+- Minor improvements.
+
+
+v.2.00.0.17, 01 Oct 2001
+- First public version.
